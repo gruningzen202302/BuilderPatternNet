@@ -1,0 +1,14 @@
+C:\Users\qimon\source\repos\BuilderPatternNet\bin\Debug\net8.0\BuilderPatternNet.exe
+C:\Users\qimon\source\repos\BuilderPatternNet\bin\Debug\net8.0\BuilderPatternNet.deps.json
+C:\Users\qimon\source\repos\BuilderPatternNet\bin\Debug\net8.0\BuilderPatternNet.runtimeconfig.json
+C:\Users\qimon\source\repos\BuilderPatternNet\bin\Debug\net8.0\BuilderPatternNet.dll
+C:\Users\qimon\source\repos\BuilderPatternNet\bin\Debug\net8.0\BuilderPatternNet.pdb
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\BuilderPatternNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\BuilderPatternNet.AssemblyInfoInputs.cache
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\BuilderPatternNet.AssemblyInfo.cs
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\BuilderPatternNet.csproj.CoreCompileInputs.cache
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\BuilderPatternNet.dll
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\refint\BuilderPatternNet.dll
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\BuilderPatternNet.pdb
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\BuilderPatternNet.genruntimeconfig.cache
+C:\Users\qimon\source\repos\BuilderPatternNet\obj\Debug\net8.0\ref\BuilderPatternNet.dll

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Text;
 
 public class CodeSnippet
@@ -15,21 +16,21 @@ public class CodeSnippet
         DataType = datatype ?? throw new ArgumentNullException(paramName: nameof(datatype));
     }
     
-    private string ToStringImplemantation(int indentsize)
+    private string ToStringImplemantation(int indentSize)
     {
         var stringBuilder = new StringBuilder();
-        var indentation = new string(' ', _indentSize * indentsize);
+        var indentation = new string(' ', _indentSize * indentSize);
         stringBuilder.AppendLine($"{indentation}public {DataType} {ObjectName};");
         
-        // if(!string.IsNullOrWhiteSpace(Text))
-        // {
-        //     stringBuilder.Append(new string(' ', _indentsize * (indentsize + 1)));
-        //     stringBuilder.AppendLine(Text);
-        // }
-        // foreach(var codeBuilder in CodeBuilders)
-        // {
-        //     stringBuilder.Append(codeBuilder.ToStringImplementation(indentsize + 1))
-        // }
+        if(!string.IsNullOrWhiteSpace(ObjectName))
+        {
+            stringBuilder.Append(new string(' ', _indentSize * (indentSize + 1)));
+            stringBuilder.AppendLine(ObjectName);
+        }
+        foreach(var codeSnippet in CodeSnippets)
+        {
+            stringBuilder.Append(codeSnippet.ToStringImplemantation(indentSize + 1);
+        }
         return stringBuilder.ToString();
     }
     public override string ToString(){
@@ -37,9 +38,11 @@ public class CodeSnippet
     }
 }
 
+
 public class CodeBuilder
 {
     CodeSnippet _codeSnippet = new CodeSnippet();
+    CodeSnippet _rootCodeSnippet = new CodeSnippet();
     public CodeBuilder(string rootClassName)
     {
         this._codeSnippet = rootClassName;
@@ -61,14 +64,9 @@ public class CodeBuilder
     }
 }
 
-internal class Program
-{
-    public static void Main(string[] args)
-    {
-        var cb = new CodeBuilder("Person")
-        .AddField("Name", "string")
-        .AddField("Age", "int");
-        Console.WriteLine(cb);
-    }
-}
+
+var cb = new CodeBuilder("Person")
+.AddField("Name", "string")
+.AddField("Age", "int");
+Console.WriteLine(cb);
 
